@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Indigenous Peoples of Canada: Geography and Well-Being</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: cadetblue;
+                color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                text-align: center;
+
+            }
+            .hero {
+                max-width: 800px;
+                margin: 0 auto 70px;
+                font-size: 1.3rem;
+                font-weight:500;
+                line-height:1.6;
+            }
+            .section {
+                display: flex;                
+                margin-bottom: 70px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            .viz_description{
+                font-size: 1rem;
+                max-width: 700px;
+                margin: 0 auto 25px;
+                opacity: 0.9;
+            
+            }
+            .viz_box {
+                background: white;
+                padding: 25px;
+                border-radius: 12px;
+                box-shadow: 0 6px 20px gray;
+                width: 100%;
+                max-width: 850px;
+            }
+            iframe {
+                width: 100%;
+                height: 600px;
+                border: none;
+                border-radius: 8px;
+                display: block;
+
+            }
+            .main-title {
+                font-size: 2.9rem;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="main-title">
+                Indigenous Peoples of Canada: Geography and Well-Being
+            </h1>
+            <div class = "hero">
+                <p> 
+                    This investigation explores the geographic distribution of indigenous peoples of Canada across provinces and their well-being.
+                </p>
+            </div>
+            <div class = "section">
+                <h2>
+                    Part 1: Geographic Distribution of Canadian Indigenous Peoples across provinces
+                </h2>
+                <p class="viz_description">
+                    This visualization explores where different indigenous groups live per province. 
+                </p>
+                <div class="viz_box">
+                    <iframe src = "data/map.html">
+
+                    </iframe>
+                </div>
+            </div>
+            <div class = "section">
+                <h2>
+                    Part 2: Food Insecurity and Mental Well-Being of Canadian Indigenous Peoples
+                </h2>
+                <p class="viz_description">
+                    This visualization explores mental well-being of different Indigenous groups and their food security level. 
+
+                </p>
+                <div class="viz_box">
+                    <iframe src = "data/scatter.html">
+                    </iframe>
+                </div>
+            </div>    
+
+
+            <div class = "section">
+                <h2>
+                    Part 3: Provinces containing most Indigenous People
+                </h2>
+                <p class="viz_description">
+                    This visualization explores distribution of Indigenous groups among the 3 Canadian Provinces that are home to most Indigenous Peoples. 
+
+                </p>
+                <div class="viz_box">
+                    <iframe src = "data/subplots.html">
+                    </iframe>
+                </div>
+            </div>    
+        </div>
+    </body>
+</html>
